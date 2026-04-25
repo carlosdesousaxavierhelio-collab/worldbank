@@ -14,6 +14,8 @@
 
     <!-- Custom styles for this template -->
     <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/login.css" rel="stylesheet">
+
   </head>
 
   <body>
@@ -21,7 +23,7 @@
     <header>
       
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="worldbank" href="index.html">World Bank</a>
+         <a class="worldbank" href="index.html">World Bank</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,7 +42,7 @@
             </li>
 
             <li class="nav-item ">
-              <a class="nav-link" href="login.html">login <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">login <span class="sr-only">(current)</span></a>
             </li>
           </ul>
         </div>
@@ -50,9 +52,27 @@
 
     <!-- Begin page content -->
     <main role="main" class="container">
-      <h1 class="mt-5">maior banco do mundo</h1>
-      <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body &gt; .container</code>.</p>
-      <p>navegue para o melhor<a href="../sticky-footer"> conversor</a> que ja existiu.</p>
+      <form class="form-signin">
+      <img class="mb-4" src="https://www.svgrepo.com/show/476830/bank.svg" alt=""
+      width="72"
+      height="72"
+      style="margin-left: 115px;"/>
+
+      <h1 class="h3 mb-3 font-weight-normal"
+      style="margin-left: 80px;"
+      >faça login</h1>
+      <label for="inputEmail" class="sr-only">email</label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="seu email@gmail.com" required autofocus>
+      <label for="inputPassword" class="sr-only">senha</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="sua senha" required>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> lembrar-me
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">entrar</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2026-2027</p>
+    </form>
     </main>
 
     <footer class="footer">

@@ -7,6 +7,9 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  background-image: url(https://images.pexels.com/photos/15166361/pexels-photo-15166361.jpeg);
+  background-size: cover;
+  color: white;
 }
 .footer {
   position: absolute;
