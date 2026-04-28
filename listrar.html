@@ -14,6 +14,7 @@
 
     <!-- Custom styles for this template -->
     <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/listrar.css" rel="stylesheet">
   </head>
 
   <body>
@@ -32,7 +33,7 @@
             </li>
 
               <li class="nav-item">
-              <a class="nav-link" href="listrar.html">lista de saldo <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="listar.html">lista de saldo <span class="sr-only">(current)</span></a>
             </li>
 
             <li class="nav-item">
@@ -49,15 +50,18 @@
     </header>
 
     <!-- Begin page content -->
-    <main role="main" class="container">
-      <h1 class="mt-5">maior banco do mundo</h1>
-      <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body &gt; .container</code>.</p>
-      <p>navegue para o melhor<a href="conversor.html"> conversor</a> que ja existiu.</p>
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-        <span class="text-muted">desenvolvido por: hélio carlos</span>
+    <main role="main" class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+     <div class="card saldo-card p-4">
+        <h4 class="text-center mb-4">saldo da conta</h4>
+        <div class="saldo-valor text-center mb-3">
+          R$ <span id="saldo">0.00</span>
+        </div>
+        <h5 class="mt-3">histórico</h5>
+        <ul class="list-group mt-2" id="historico">
+          <!-- js vai preencher dinamicamente -->
+        </ul>
+     </div>
+      </main>
       </div>
     </footer>
 
